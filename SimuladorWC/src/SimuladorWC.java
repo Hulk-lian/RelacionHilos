@@ -59,10 +59,10 @@ class HiloLector extends Thread{
 			for(String s: listaPalabras){
 				if(!s.trim().isEmpty()){
 					npalabras++;
-					nletras=s.length();
+					
 				}
 			}
-			
+			nletras=lineaLeida.length();
 			nlineas++;
 		}
 		elRegistro.actualizarregistro(npalabras, nlineas, nletras);
